@@ -1,7 +1,6 @@
 #include <iostream>
 
 using namespace std;
-
 // Rational Class declaration
 class Rational {
    private:
