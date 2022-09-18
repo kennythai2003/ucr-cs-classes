@@ -26,6 +26,7 @@ int main() {
    return 0;
 }
 
+
 // Place charCnt implementation here
 int charCnt (string file, char x) {
    int count = 0;
