@@ -14,8 +14,8 @@ void remove(double array[], int &arraySize, int index);
 // - Passes in an array and the size of the array.
 // - Outputs each value in the array separated by a comma and space, with no comma, space or newline at the end.
 void display(const double array[], int arraySize);
-
-
+//lol
+//sad
 const int ARR_CAP = 100;
 
 int main(int argc, char *argv[]) {
