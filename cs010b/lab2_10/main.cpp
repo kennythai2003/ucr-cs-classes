@@ -3,7 +3,6 @@
 #include <cstdlib>
 
 using namespace std;
-
 // Place charCnt prototype (declaration) here    
 int charCnt (string file, char x);
 
