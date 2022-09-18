@@ -1,0 +1,16 @@
+//    struct IntNode {
+//       int value;
+//       IntNode *next;
+//       IntNode(int value) : value(value), next(nullptr) {}
+//       //no default constructor
+//    };
+ //  intnode will only eixt in intlist class
+
+//    list1cpp
+//    IntList list1;
+//    list1.push_front(8);
+//    list1.push_front(5);
+
+//     intlist() initalizes an empty list set to nullptr
+
+// destructor needs a loop
