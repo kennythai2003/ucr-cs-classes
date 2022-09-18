@@ -6,6 +6,7 @@
    
 using namespace std;
    
+   
 // given the coordinates of a point (x,y) computes if the point is inside or on the circle 
 // centered at origin with radius r. Returns 'true' if it is inside or on the circle, 'false' otherwise.
 // DO NOT use the sqrt function here. Just compare to r squared.    
