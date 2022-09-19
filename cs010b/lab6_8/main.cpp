@@ -16,5 +16,4 @@ int main() {
     cout << endl;
     cout << "output front: " << v1.front() << endl;
     cout << "output back:"  << v1.back() << endl;
-
 }
