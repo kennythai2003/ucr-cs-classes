@@ -8,7 +8,6 @@ Elf::Elf(const string &name, double health, double attackStrength, string family
 {}
 
 void Elf::attack(Character &enemy) {
-    
     if (enemy.getType() == ELF) {
         Elf &opp = dynamic_cast<Elf &>(enemy);
 
