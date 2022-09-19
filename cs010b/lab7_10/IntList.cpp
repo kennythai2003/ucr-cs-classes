@@ -2,7 +2,9 @@
 using namespace std;
 
 //CHECK FOR CASES: empty list; when next goes towards an empty list; head & tail
-
+//ds
+///ds/
+//ds
 IntList::~IntList() {
     while (head != nullptr) {
         IntNode *temp; 
@@ -13,7 +15,6 @@ IntList::~IntList() {
     //does destroyer delete all ndoes (test 5)
 
 }
-
 IntList::IntList() {
     head = nullptr;
     tail = nullptr;
