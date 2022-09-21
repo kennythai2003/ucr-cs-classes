@@ -16,7 +16,6 @@ int main() {
 
    return 0;
 }
-
 //Implement the flipString function here
 void flipString(string &s){
    if (s.size() == 1 || s.size() == 0) {
