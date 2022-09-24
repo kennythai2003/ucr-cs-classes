@@ -3,8 +3,12 @@ using namespace std;
  
 int main()
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);  
+   
     long long int jigsawA = 0;
     long long int jigsawB = 0;
+   
     cin >> jigsawA;
     jigsawB = jigsawA;
     cin.ignore();
@@ -63,7 +67,6 @@ int main()
             }
         }
     }
- 
 /*
 cases
 1. both teams alive
@@ -73,29 +76,34 @@ cases
 */
     if (aliveA && aliveB)
     {
-        cout << "Oh no!" << endl;
+        printf("Oh no!");
     }
     else if (aliveA && aliveB == false)
     {
-        cout << "Team 1 wins at round" << roundWonA << "!" << endl;
+    //    cout << "Team 1 wins at round" << roundWonA << "!" << endl;
+        printf("Team 1 wins at round %d!", roundWonA);
     }
     else if (aliveB && aliveA == false)
     {
         cout << "Team 2 wins at round" << roundWonB << "!" << endl;
+        printf("Team 2 wins at round %d!", roundWonB);
     }
     else if (aliveB == false && aliveA == false)
     {
         if (roundWonA == roundWonB)
         {
-            cout << "It's a tie at round " << roundWonA << "!" << endl;
+        //    cout << "It's a tie at round " << roundWonA << "!" << endl;
+            printf("It's a tie at round %d!", roundWonA);
         }
         else if (roundWonA < roundWonB)
         {
-            cout << "Team 1 wins at round " << roundWonA << "!" << endl;            
+        //    cout << "Team 1 wins at round " << roundWonA << "!" << endl;    
+            printf("Team 1 wins at round %d!", roundWonA);        
         }
         else
         {
-            cout << "Team 2 wins at round " << roundWonB << "!" << endl;            
+        //    cout << "Team 2 wins at round " << roundWonB << "!" << endl;
+            printf("Team 2 wins at round %d!", roundWonB);            
         }
     }
     // if (deadA && deadB)
