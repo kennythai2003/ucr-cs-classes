@@ -1,8 +1,10 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-
+//new
 using namespace std;
+
+
 
 void rCopy (istream &, ostream &);
 bool rCopy(const string &, const string &);
@@ -18,7 +20,6 @@ if (argc != 3) {
 
     // fstream fin;
     // fin.open(inputFile);
-
     // fstream out;
     // out.open(outputFile);
 
