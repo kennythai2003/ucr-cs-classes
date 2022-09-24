@@ -5,7 +5,6 @@
 #include <string>
 
 using namespace std;
-
 void readData(const string &, vector<double> &, vector<double> &);
 double interpolation(double, const vector<double> &, const vector<double> &);
 bool isOrdered(const vector<double> &);
@@ -225,10 +224,15 @@ int main() {
 using namespace std;
 
 int main() {
-
    /* TODO: Declare any necessary variables here. */
       
       
+ 
+ 
+ 
+ 
+ 
+ 
    /* TODO: Read a file name from the user and read the tsv file here. */
    
    
