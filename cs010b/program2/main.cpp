@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 //resubmitted for legibility(: )
 class Date {
@@ -45,6 +44,7 @@ Date getDate() {
    int choice;
    unsigned monthNumber, day, year;
    string monthName;
+
 
    cout << "Which Date constructor? (Enter 1, 2, or 3)" << endl
       << "1 - Month Number" << endl
