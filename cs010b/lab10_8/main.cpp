@@ -2,7 +2,6 @@
 using namespace std;
 
 #include "IntList.h"
-
 int main() {
 
    int testNum;
