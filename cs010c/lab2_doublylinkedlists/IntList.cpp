@@ -6,7 +6,6 @@ IntList::IntList() {
     dummyHead->next = dummyTail; //in an empty list there is only head and node
     dummyTail->prev = dummyHead; //^^
 }
-
 IntList::~IntList(){
     IntNode *temp = dummyHead;
     while (dummyHead != nullptr) {
