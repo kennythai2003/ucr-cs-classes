@@ -7,6 +7,8 @@ using namespace std;
 
 #include "arithmeticExpression.h"
 
+
+
 int arithmeticExpression::priority(char op){
     int priority = 0;
     if(op == '('){
