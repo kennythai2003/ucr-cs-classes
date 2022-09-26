@@ -13,6 +13,8 @@ int main()
     cout << endl;
    //tests constructor, push, pop, top and empty
    if (test == 1) {
+
+    
        try{
           cout << "\nstack1 constructor called";
           stack<int> stack1;
