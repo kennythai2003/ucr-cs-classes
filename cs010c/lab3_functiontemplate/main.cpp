@@ -18,6 +18,7 @@ unsigned min_index(const vector<T> &vals, unsigned index) {
     return minIndex;
 }
 
+
 template<typename T>
 void selection_sort(vector<T> &vals) {
     for (unsigned int i = 0; i < vals.size(); ++i) {
