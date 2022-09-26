@@ -5,6 +5,7 @@
 #include <vector>
 using namespace std;
 
+
 int main() {
    /* TODO: Declare any necessary variables here. */
     string studentInfoFile; //input file
