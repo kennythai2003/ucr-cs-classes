@@ -3,6 +3,8 @@ using namespace std;
 
 #include "Heap.h"
 
+
+
   /*Initializes an empty heap.*/
   Heap::Heap(){
       numItems = 0;
