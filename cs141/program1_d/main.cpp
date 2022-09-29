@@ -1,4 +1,8 @@
 #include <bits/stdc++.h>
+
+// #include <vector>
+// #include <iostream>
+
 using namespace std;
  
 int main()
@@ -27,12 +31,12 @@ int main()
     vector<long long int> timeframe(gameDuration, 0);
     //test
     // for (int i = 0; i < gameDuration; ++i)
-    // {
+    // 
     //     printf("%d", time[i]);
     // }
     int timeA = 0;
     int timeB = 0;
-    int rainbow = 0;
+    int rainbow = 0; 
  
     for (long long int i = 0; i < upIntervals; ++i)
     {
@@ -58,7 +62,10 @@ int main()
             }
         }
     }
-   
+    
+//use two pointers to see overlap and replace scores if needed
+
+
     for (long long int i = 0; i < downIntervals; ++i)
     {
         cin >> timeA;
@@ -85,15 +92,13 @@ int main()
                 timeframe.at(timeA) = 3;
             }
         }
-    //    cout << timeA << " " << timeB << " " << rainbow << endl;    
+    //    cout << timeA << " " << timeB << " " << rainbow << endl;     
     }
         long long int sum = 0;
         for (int i = 0; i < timeframe.size(); ++i)
         {
         //    cout << i << ": " << timeframe[i] << endl;
             sum += timeframe.at(i);
-        }  
+        }   
         printf("%d\n", sum);
 }
- 
-
