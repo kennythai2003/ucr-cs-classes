@@ -10,6 +10,8 @@ Graph::Graph(ifstream &ifs) {
 	ifs >> nodes;
 	ifs >> edges;
 	
+
+	
 	ifs.ignore();
 	
 	for (int i = 0; i < nodes; i++) {
