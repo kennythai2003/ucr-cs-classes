@@ -3,9 +3,9 @@
 
 using namespace std;
 
+
 const int NUMBERS_SIZE = 50000; //array size
 const int CLOCKS_PER_MS = CLOCKS_PER_SEC / 1000; //clock per milliseconds
-
 
 int genRandInt(int, int);
 void fillArrays(int [], int [], int []);
