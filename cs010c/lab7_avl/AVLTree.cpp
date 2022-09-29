@@ -8,59 +8,11 @@ AVLTree::AVLTree(){
     root = nullptr;
 }
 
+
 void AVLTree::insert(const string &sent) {
     Node *newNode = new Node(sent); 
     insert(root,newNode);
 } 
-// void AVLTree::insert(){
-
-// }
-// void AVLTree::insert(const string &data){
-//     Node* newNode = new Node(data);
-//     Node* curr = root;
-//     if (root == nullptr){
-//         root = newNode;
-//         root->balanceFactor = 0;
-//         return;
-//     }
-
-//     Node* parentCurr; 
-//     while (curr != nullptr) {
-//         //traverse down tree to find where newNode belongs
-//         parentCurr = curr;
-//         if (newNode->data == parentCurr->data){
-//             return; 
-//         }
-//         else if (newNode->data < parentCurr->data){
-//             //less continues to traverse down left
-//             curr = curr->left;
-//         }
-//         else{
-//             //more continnues to traverse down right
-//             curr = curr->right;
-//         }
-//     }
-//     if (newNode->data < parentCurr->data){
-//         //case where new node is less than current parent
-//         //set parent left to newnode, set newnode parent to parent
-//         parentCurr->left = newNode;
-//         newNode->parent = parentCurr;
-//     }
-//     if (newNode->data >parentCurr->data){
-//         parentCurr->right = newNode;
-//         newNode->parent = parentCurr;
-//     }
-//     setBalanceFactor(root);
-// }
-
-// //helper for insert
-// void AVLTree::setBalanceFactor(Node* curr) {
-// 	if (curr != nullptr) {
-// 		curr->balanceFactor = balanceFactor(curr);
-// 		setBalanceFactor(curr->left);
-// 		setBalanceFactor(curr->right);
-// 	}
-// }
 
 int AVLTree::balanceFactor(Node* curr){
     return height(curr->left) - height(curr->right);
