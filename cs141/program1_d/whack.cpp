@@ -24,6 +24,7 @@ int main ()
    int rainbow = 0;
 
    vector< pair <long long int, long long int> > timeframes;
+   vector<int> rainbows;
    timeframes.push_back(make_pair(timeA, timeB));
    
     for (long long int i = 0; i < upIntervals; ++i)
@@ -36,6 +37,7 @@ int main ()
         cin.ignore();
 
         timeframes.push_back(make_pair(timeA, timeB));
+        rainbows.push_back(rainbow);
 
         if (rainbow == 0)
         {
@@ -55,17 +57,26 @@ int main ()
         cin.ignore();
         cin >> rainbow;
         cin.ignore();
-
-        timeframes.push_back(make_pair(timeA, timeB));
             
         if (rainbow == 0)
         {
-          points += (timeB - timeA) + 1;  
+          for (int i = 0; i < timeframes.size(); ++i)
+          {
+            if(timeframes[i].first() <= timeA && timeB <= timeframes[i].second())
+            {
+                
+            }
+          }          
         }
         if (rainbow == 1)
         {
-          points += 3 * (timeB - timeA + 1);   
+          for (int i = 0; i < timeframes.size(); ++i)
+          {
+            if(timeframes[i].first() <= timeA && timeB <= timeframes[i].second())
+            {
+                
+            }
+          } 
         }
     }
-    cout << points << endl;
 }
