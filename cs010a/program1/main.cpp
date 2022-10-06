@@ -113,7 +113,6 @@ int main() {
    //outputting for sum 25
    cout << "25\t";
    cout << static_cast<double>(sum25) / simVal << endl;
-
  
 return 0;
 } 
