@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 int gcf (int, int);
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
- 
     int money;
     int candlePrice;
-    vector<int> candle{ 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    vector<int> candle;
     vector<int> price;
     vector<int> usableC;
     vector<int> usableP;
@@ -20,7 +20,7 @@ int main()
     {
         cin >> candlePrice;
         cin.ignore();
- 
+        candle.push_back(i + 1);
         price.push_back(candlePrice);
     }
  
@@ -49,42 +49,63 @@ int main()
     //     cout << "candle: " << candle.at(i) << " price: " << price.at(i) << endl;
     // }
  
-    for (int i = 0; i < candle.size(); ++i)
-    {
-        for (int j = i + 1; j < candle.size() - 1; ++j)
-        {
-            cout << "comparing candle " << i << ": " << price.at(i) << " vs candle " <<j << ": " << price.at(j) << endl;
-            if(gcf(price.at(i), price.at(j)) == price.at(i) && gcf(price.at(i), price.at(j)) == price.at(j))
-            {
-               if (candle.at(i) < candle.at(j))
-               {
-                   usableC.push_back(candle.at(j));
-                   usableP.push_back(price.at(j));
-               }
-               else
-               {
-                   usableC.push_back(candle.at(i));
-                   usableP.push_back(price.at(i));                  
-               }
-            }
-            else if (gcf(price.at(i), price.at(j)) == price.at(i))
-            {
-                   usableC.push_back(candle.at(i));
-                   usableP.push_back(price.at(i));            
-            }
-            else if (gcf(price.at(i), price.at(j)) == price.at(j))
-            {
-                   usableC.push_back(candle.at(j));
-                   usableP.push_back(price.at(j));  
-            }
+    // for (int i = 0; i < candle.size(); ++i)
+    // {
+    //     for (int j = i + 1; j < candle.size() - 1; ++j)
+    //     {
+    //         cout << "comparing candle " << i << ": " << price.at(i) << " vs candle " <<j << ": " << price.at(j) << endl;
+    //         if(gcf(price.at(i), price.at(j)) == price.at(i) && gcf(price.at(i), price.at(j)) == price.at(j))
+    //         {
+    //            if (candle.at(i) < candle.at(j))
+    //            {
+    //                usableC.push_back(candle.at(j));
+    //                usableP.push_back(price.at(j));
+    //            }
+    //            else
+    //            {
+    //                usableC.push_back(candle.at(i));
+    //                usableP.push_back(price.at(i));                  
+    //            }
+    //         }
+    //         else if (gcf(price.at(i), price.at(j)) == price.at(i))
+    //         {
+    //                usableC.push_back(candle.at(i));
+    //                usableP.push_back(price.at(i));            
+    //         }
+    //         else if (gcf(price.at(i), price.at(j)) == price.at(j))
+    //         {
+    //                usableC.push_back(candle.at(j));
+    //                usableP.push_back(price.at(j));  
+    //         }
  
+    //     }
+    // }
+    // for (int i = 0; i < 9; i++)
+    // {
+    //     cout << "usable candle: " << usableC.at(i) << " price: " << usableP.at(i) << endl;
+    // }    
+
+    while (money != 0)
+    {
+        if (money < 0)
+        {
+            while (money != 0)
+            {
+                //buy 
+            }
+        }
+        else
+        {
+            money -= price.at(i);
         }
     }
     for (int i = 0; i < 9; i++)
     {
-        cout << "usable candle: " << usableC.at(i) << " price: " << usableP.at(i) << endl;
-    }    
+        cout << candle.at(i) << " " << price.at(i) << endl;
+    }
     return 0;
+
+
 }
 int gcf (int a, int b)
 {
